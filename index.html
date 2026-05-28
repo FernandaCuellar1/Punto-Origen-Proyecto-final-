@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendas Tejidas a Crochet | Tienda Oficial</title>
+    <!-- Google Fonts: Outfit (Brand headings) & Inter (Body text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- 1. BARRA DE ANUNCIOS SUPERIOR (Estilo Adidas Ticker) -->
+    <div class="announcement-bar" id="announcement-bar">
+        <div class="announcement-ticker">
+            <span class="announcement-item"><i class="fa-solid fa-truck-fast"></i> ENVÍOS A TODA COLOMBIA (FLORENCIA,
+                NEIVA, BOGOTÁ, MEDELLÍN)</span>
+            <span class="announcement-item"><i class="fa-solid fa-heart"></i> 100% HECHO A MANO POR MADRES SOLTERAS Y
+                ABUELAS</span>
+            <span class="announcement-item"><i class="fa-solid fa-seedling"></i> LANAS ECOLÓGICAS DE FIBRAS
+                VEGETALES</span>
+        </div>
+    </div>
+    <!-- 2. HEADER ADHESIVO (Sticky Header) -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <!-- Brand Logo & Name -->
+            <a href="#" class="brand-logo" id="brand-logo">
+                <img src="./brain/40d0497e-5fe5-4aa9-9064-7ff65bf16c55/image.png" alt="Logo Prendas Tejidas"
+                    style="height: 60px; width: auto;">
+
+                <div class="logo-text">
+                    <span class="brand-name">PRENDAS TEJIDAS</span>
+                    <span class="brand-sub">A CROCHET</span>
+                </div>
+            </a>
+            <!-- Navigation Links -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#" class="nav-link active" data-category="todos">Colección</a></li>
+                    <li><a href="#" class="nav-link" data-category="Tops">Tops</a></li>
+                    <li><a href="#" class="nav-link" data-category="Blusas">Blusas</a></li>
+                    <li><a href="#" class="nav-link" data-category="Playa">Playa</a></li>
+                    <li><a href="#" class="nav-link" data-category="Bolsos">Bolsos</a></li>
+                    <li><a href="#" class="nav-link" data-category="Otros">Accesorios</a></li>
+                </ul>
+            </nav>
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <!-- Search bar style Adidas -->
+                <div class="search-box" id="search-box">
+                    <input type="text" placeholder="Buscar productos..." id="search-input">
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <button class="action-icon-btn" id="wishlist-btn" title="Favoritos">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge" id="wishlist-count">0</span>
+                </button>
+                <button class="action-icon-btn" id="cart-btn" title="Carrito de compras">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge" id="cart-count">0</span>
+                </button>
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- 3. HERO BANNER PRINCIPAL (Estilo Campaña Adidas) -->
+    <section class="hero-banner" id="hero-banner">
+        <div class="hero-image-container">
+            <!-- Relative link directly pointing to the generated image in brain directory -->
+            <img src="./brain/40d0497e-5fe5-4aa9-9064-7ff65bf16c55/hero_campaign_1779986067172.png"
+                alt="Campaña Tejidos a Crochet" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-tag">EDICIÓN EXCLUSIVA</span>
+            <h1 class="hero-title">TEJIENDO TRADICIÓN,<br>VISTIENDO EXCLUSIVIDAD</h1>
+            <p class="hero-description">Prendas de alta costura artesanal tejidas 100% a mano en Florencia con lanas
+                sostenibles de fibras vegetales.</p>
+            <div class="hero-actions-container">
+                <a href="#catalogo" class="btn btn-primary">COMPRAR AHORA <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#historia" class="btn btn-secondary">NUESTRA HISTORIA</a>
+            </div>
+        </div>
+    </section>
+    <!-- 4. GRID DE CATEGORÍAS POPULARES (Estilo Tarjetas Adidas) -->
+    <section class="categories-grid-section container">
+        <h2 class="section-title">EXPLORA CATEGORÍAS</h2>
+        <div class="categories-grid">
+            <!-- Tarjeta 1 -->
+            <a href="#catalogo" class="category-card" data-cat-filter="Tops">
+                <div class="card-img-wrapper">
+                    <img src="./brain/40d0497e-5fe5-4aa9-9064-7ff65bf16c55/hero_campaign_1779986067172.png"
+                        alt="Tops & Blusas" class="card-img">
+                </div>
+                <div class="card-info">
+                    <h3>TOPS Y BLUSAS</h3>
+                    <span class="card-link">Ver catálogo <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+            <!-- Tarjeta 2 -->
+            <a href="#catalogo" class="category-card" data-cat-filter="Bolsos">
+                <div class="card-img-wrapper">
+                    <img src="./brain/40d0497e-5fe5-4aa9-9064-7ff65bf16c55/crochet_bag_1779986195032.png"
+                        alt="Bolsos Crochet" class="card-img">
+                </div>
+                <div class="card-info">
+                    <h3>BOLSOS & ACCESORIOS</h3>
+                    <span class="card-link">Explorar accesorios <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+            <!-- Tarjeta 3 -->
+            <a href="#catalogo" class="category-card" data-cat-filter="Salidas de Baño">
+                <div class="card-img-wrapper">
+                    <img src="./brain/40d0497e-5fe5-4aa9-9064-7ff65bf16c55/verano.png" alt="Trajes & Salidas de baño" class="card-img">
+                </div>
+                <div class="card-info">
+                    <h3>PLAYA Y VERANO</h3>
+                    <span class="card-link">Colección verano <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- 5. CATÁLOGO DE PRODUCTOS E INTERACCIONES (Estilo Adidas Store) -->
+    <section class="catalog-section container" id="catalogo">
+        <div class="catalog-header">
+            <h2 class="section-title">PRODUCTOS DESTACADOS</h2>
+
+            <!-- Quick filters bar -->
+            <div class="catalog-filter-bar">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-filter="todos">Todos</button>
+                    <button class="filter-tab" data-filter="Tops">Tops</button>
+                    <button class="filter-tab" data-filter="Blusas">Blusas</button>
+                    <button class="filter-tab" data-filter="Playa">Playa</button>
+                    <button class="filter-tab" data-filter="Bolsos">Bolsos</button>
+                    <button class="filter-tab" data-filter="Otros">Accesorios</button>
+                </div>
+
+                <div class="sort-wrapper">
+                    <label for="sort-select">Ordenar por:</label>
+                    <select id="sort-select" class="sort-select">
+                        <option value="default">Recomendados</option>
+                        <option value="price-asc">Precio: Bajo a Alto</option>
+                        <option value="price-desc">Precio: Alto a Bajo</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- Products Grid -->
+        <div class="products-grid" id="products-grid">
+            <!-- Dynamic items loaded via JavaScript -->
+        </div>
+    </section>
+    <!-- 6. SECCIÓN DE PROPÓSITO SOCIAL Y SOSTENIBILIDAD (Storytelling) -->
+    <section class="storytelling-section" id="historia">
+        <div class="story-container">
+            <div class="story-image">
+                <img src="./brain/40d0497e-5fe5-4aa9-9064-7ff65bf16c55/knitting_hands_1779986180733.png"
+                    alt="Manos tejiendo con tradición">
+            </div>
+            <div class="story-content">
+                <span class="story-tag"><i class="fa-solid fa-seedling"></i> NUESTRO PROPÓSITO SOCIAL</span>
+                <h2 class="story-title">TEJIENDO ESPERANZA, SOSTENIENDO HOGARES</h2>
+                <p>Nuestra misión va más allá de la moda. Cada prenda está tejida 100% a mano por madres solteras y
+                    abuelas del departamento del Caquetá en Florencia. Proveemos empleos dignos con horarios flexibles
+                    que les permiten cuidar de sus familias.</p>
+                <p>Al mismo tiempo, cuidamos de la Tierra usando exclusivamente lanas ecológicas e hilados procedentes
+                    de fibras vegetales, reduciendo la huella de carbono y evitando microplásticos.</p>
+
+                <div class="story-values">
+                    <div class="value-item">
+                        <div class="value-icon"><i class="fa-solid fa-hands-holding"></i></div>
+                        <div>
+                            <h4>100% Hecho a Mano</h4>
+                            <p>Técnicas tradicionales transmitidas por generaciones.</p>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon"><i class="fa-solid fa-leaf"></i></div>
+                        <div>
+                            <h4>Fibras Vegetales</h4>
+                            <p>Algodón orgánico y lanas biodegradables premium.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 7. BOLETÍN / NEWSLETTER -->
+    <section class="newsletter-section">
+        <div class="newsletter-container">
+            <h2>SÉ PARTE DE LA MODA CONSCIENTE</h2>
+            <p>Suscríbete para recibir noticias de nuevas colecciones, historias de nuestras artesanas y un 10% de
+                descuento en tu primera compra.</p>
+            <form class="newsletter-form" id="newsletter-form">
+                <input type="email" placeholder="Tu correo electrónico" required id="newsletter-email">
+                <button type="submit" class="btn btn-primary">REGISTRARSE <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </section>
+    <!-- 8. FOOTER CORPORATIVO -->
+    <footer class="main-footer">
+        <div class="footer-top container">
+            <div class="footer-col brand-col">
+                <div class="brand-logo footer-logo">
+                    <div class="logo-icon">
+                      <img src="./brain/40d0497e-5fe5-4aa9-9064-7ff65bf16c55/image.png" alt="Logo" style="width: 50px; height: auto;">
+                    </div>
+                    <div class="logo-text">
+                        <span class="brand-name">PRENDAS TEJIDAS</span>
+                        <span class="brand-sub">A CROCHET</span>
+                    </div>
+                </div>
+                <p class="footer-slogan">"Tejiendo tradición, vistiendo exclusividad"</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" title="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" title="Facebook"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://tiktok.com" target="_blank" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://pinterest.com" target="_blank" title="Pinterest"><i
+                            class="fa-brands fa-pinterest-p"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Colecciones</h3>
+                <ul>
+                    <li><a href="#catalogo" class="cat-link" data-cat="Tops">Tops de Temporada</a></li>
+                    <li><a href="#catalogo" class="cat-link" data-cat="Blusas">Blusas Elegantes</a></li>
+                    <li><a href="#catalogo" class="cat-link" data-cat="Salidas de Baño">Salidas de Baño</a></li>
+                    <li><a href="#catalogo" class="cat-link" data-cat="Bolsos">Bolsos y Carteras</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Soporte y Contacto</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i> Preguntas Frecuentes</a></li>
+                    <li><a href="#"><i class="fa-solid fa-truck"></i> Políticas de Envío</a></li>
+                    <li><a href="#"><i class="fa-solid fa-arrows-rotate"></i> Devoluciones y Cambios</a></li>
+                    <li><a href="https://wa.me/573000000000" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat
+                            de WhatsApp</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Tienda Florencia</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Centro Comercial Florencia, Local 102<br>Florencia, Caquetá,
+                    Colombia</p>
+                <p><i class="fa-solid fa-envelope"></i> contacto@prendastejidascrochet.com</p>
+                <p><i class="fa-solid fa-phone"></i> +57 322 123 4567</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Prendas Tejidas a Crochet. Todos los derechos reservados. | Diseñado con propósito
+                    social.</p>
+                <div class="payment-methods">
+                    <span title="Nequi"><i class="fa-solid fa-mobile-screen-button"></i> Nequi</span>
+                    <span title="Daviplata"><i class="fa-solid fa-wallet"></i> Daviplata</span>
+                    <span title="Transferencia"><i class="fa-solid fa-building-columns"></i> Bancolombia</span>
+                    <span title="Efectivo"><i class="fa-solid fa-money-bill-1-wave"></i> Efectivo</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 9. CARRITO DE COMPRAS DESLIZABLE (Shopping Cart Drawer) -->
+    <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+    <div class="cart-drawer" id="cart-drawer">
+        <div class="cart-drawer-header">
+            <h3>TU CARRITO DE COMPRAS (<span id="cart-drawer-count">0</span>)</h3>
+            <button class="close-drawer-btn" id="close-cart-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <!-- Cart Items list -->
+        <div class="cart-drawer-items" id="cart-drawer-items">
+            <!-- Dynamic elements loaded via JS -->
+            <div class="empty-cart-message">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>Tu bolsa de compras está vacía.</p>
+                <a href="#catalogo" class="btn btn-secondary close-drawer-action">COMPRAR PRODUCTOS</a>
+            </div>
+        </div>
+
+        <!-- Cart Footer -->
+        <div class="cart-drawer-footer" id="cart-drawer-footer">
+            <div class="cart-subtotal">
+                <span>SUBTOTAL</span>
+                <span class="subtotal-price" id="cart-subtotal-price">$0 COP</span>
+            </div>
+            <p class="cart-shipping-notice">Envío gratis a todo el país en compras superiores a $150.000 COP.</p>
+            <button class="btn btn-primary w-100" id="checkout-whatsapp-btn">
+                COMPRAR POR WHATSAPP <i class="fa-brands fa-whatsapp"></i>
+            </button>
+            <button class="btn btn-secondary w-100 close-drawer-action mt-10">
+                CONTINUAR COMPRANDO
+            </button>
+        </div>
+    </div>
+    <!-- 10. MODAL DE FAVORITOS (Wishlist Modal) -->
+    <div class="wishlist-modal-overlay" id="wishlist-modal-overlay"></div>
+    <div class="wishlist-modal" id="wishlist-modal">
+        <div class="wishlist-header">
+            <h3>MIS FAVORITOS (<span id="wishlist-drawer-count">0</span>)</h3>
+            <button class="close-drawer-btn" id="close-wishlist-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="wishlist-items" id="wishlist-items-container">
+            <!-- Dynamic items -->
+            <div class="empty-wishlist-message">
+                <i class="fa-regular fa-heart"></i>
+                <p>No tienes productos en favoritos todavía.</p>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript logic file -->
+    <script src="app.js"></script>
+</body>
+
+</html>
